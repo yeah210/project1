@@ -15,6 +15,7 @@ h1 a{
   background-size: cover;
   }
 
+
 nav{display: none;}
 
 .nav_btn{display: block; width: 55px; height: 55px; padding-top: 20px; padding-left: 19px;}
@@ -69,6 +70,8 @@ h2{text-align: center;}
 .small_img ul li:last-child{margin-right: 0;}
 
 .sc_arrow{display: none;}
+
+.swiper-button-next::after, .swiper-button-prev::after{color: #fff;}
 
 
 /* --------------section3  review------------------- */
@@ -244,14 +247,14 @@ footer .inner{padding: 0 20px; text-align: center;}
 .reserve{left: 700px;}
 
 /* --------------section2------------------ */
-#section2{padding-top:100px; height: 1000px;}
+#section2{padding-top:100px; height: 900px;}
 #section2 .inner{width: 1200px; margin: 0 auto;}
 #section2 h2{padding-top: 80px; margin-bottom: 5px;}
 #section2 h2, #section2 p{text-align: left;}
 .txt3{margin-top: 10px; line-height: 1.4;}
 
 .big_img img{width: 70%; position: absolute; top: 0; right: 0;}
-.small_img{position: absolute; top:520px; right: 0;}
+.small_img{position: absolute; top:250px; right: 0;}
 .sc_arrow{position: absolute; top:60px; left: 50%; transform: translateX(-50%); width: 110%; margin: 0 auto;}
 
 

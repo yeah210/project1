@@ -16,6 +16,7 @@ h1 a{
   background-size: cover;
   }
 
+header .fixed{border-bottom: 1px solid #ccc;}  
 nav{display: none;}
 
 .nav_btn{display: block; width: 55px; height: 55px; padding-top: 20px; padding-left: 19px;}
@@ -33,8 +34,8 @@ nav{display: none;}
 .slide img{width: 100%;}
 
 .s_arrow a{display: none;}
-
-.slide .swiper-button-next:after, .slide .swiper-button-prev:after{content: none;}
+.mySwiper{ position: relative;}
+.mySwiper .swiper-button-next:after, .mySwiper .swiper-button-prev:after{content: none;}
 
 
 
@@ -63,7 +64,7 @@ nav{display: none;}
 
 
 /*--------------- 무비차트--------------- */
-#moviechart{padding: 50px 0px 50px 20px;margin: 0 auto; text-align: center;}
+#moviechart{padding: 50px 0px 50px 20px;margin: 0 auto; text-align: center; position: relative}
 #moviechart h2{margin-bottom: 20px;}
 .title_en {display: none;}
 
@@ -82,6 +83,7 @@ nav{display: none;}
 .m_name{font-size: 18px; font-weight: bold;}
 .m_txt{font-size: 14px;}
 
+
 .over p{color: #fff; border:1px solid #fff; border-radius: 30px; display: block; width: 100px; height: 40px; font-size: 12px; text-align: center; line-height: 36px;position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);}
 .m_arrow{display: none;}
 
@@ -89,7 +91,7 @@ nav{display: none;}
 
 #trailer{text-align: center; padding: 0 20px;}
 #trailer h2{margin: 30px 0 30px;}
-#trailer li{margin: 0 auto; box-shadow: 20px 20px 20px #555; width: calc(100% / 3); height: auto;}
+#trailer li{margin: 0 auto; box-shadow: 10px 10px 10px #555; height: 260px;}
 #trailer iframe{width: 100%;}
 #trailer img{width:100%}
 
@@ -99,6 +101,7 @@ nav{display: none;}
 .t_arrow{display: none;}
 .more{display: inline-block; width: 100px; height: 40px; border: 1px solid #ccc; border-radius: 30px;; font-size: 12px; color:#555 ; text-align: center; line-height: 38px; margin: 40px 0; transition: all 0.5s; }
 .more:hover{color: #9e55c9; border: 1px solid #9e55c9;}
+
 
 
 
@@ -132,15 +135,6 @@ nav{display: none;}
 #moviefeed li:hover .feed_title{color: #4fbdca;}
 #moviefeed li:hover .feed_txt{text-decoration: underline;}
 .feed_img img{width: 100%; margin-bottom: 10px;}
-/*
-#moviefeed li{border: 1px solid #eee; margin-bottom: 20px; }
-#moviefeed li a{display: block; text-align: left;}
-.feed_img{width: 215px; float: left;}
-.feed_img img{width: 100%;}
-.feed_txtbox{float: left; padding: 15px;}
-.feed_txtbox{display: inline-block; width: calc(100% - 215px);}
-.feed_title{font-weight: bold; font-size: 14px; margin-bottom: 10px;}
-.feed_txt{font-size: 11px; text-align: justify;} */
 .feed_title{font-weight: bold; font-size: 14px; margin-bottom: 10px; text-align: left;}
 .feed_txt{font-size: 11px; text-align: justify;} 
 
@@ -228,8 +222,8 @@ footer .inner{padding: 0 20px; text-align: center; margin: 0 auto;}
   .circle a{width: 10px; height: 10px; margin-bottom: 4px;}
   .circle a.on{width: 20px; height: 20px;}
 
-  .slide .swiper-button-next{margin-right: 50px;}
-  .slide .swiper-button-prev{margin-left: 50px;}
+  .mySwiper .swiper-button-next{margin-right: 50px;}
+  .mySwiper .swiper-button-prev{margin-left: 50px;}
 
 
   .s_arrow a{display: block;}
@@ -264,7 +258,6 @@ footer .inner{padding: 0 20px; text-align: center; margin: 0 auto;}
 
   #moviechart img.star{width: 20px; height: 20px; margin-top: 0px;}
   #moviechart ul li{width: calc((100% - 60px) / 4); margin-right: 20px;}
-  /* #moviechart ul li:last-child{margin-right: 0;} */
   #moviechart ul li .over{border-radius: 20px;}
 
   .over p{width: 120px; height: 40px; font-size: 16px; line-height: 40px;}
@@ -272,40 +265,29 @@ footer .inner{padding: 0 20px; text-align: center; margin: 0 auto;}
   .m_name{font-size: 20px; margin-bottom: 7px;}
   .m_txt{font-size: 16px;}
   .m_arrow{display: block;}
-  .m_arrow .swiper-button-prev{position: absolute; top:55%; left: -80px;}
-  .m_arrow .swiper-button-next{position: absolute; top:55%; right: -80px;}
+  #moviechart .swiper-button-prev{position: absolute; top:57%; left: -60px;}
+  #moviechart .swiper-button-next{position: absolute; top:57%; right: -60px;}
+  #moviechart .swiper-button-next:after, #moviechart .swiper-button-prev:after{content: none;}
 
-  .m_arrow  .swiper-button-next:after, .m_arrow  .swiper-button-prev:after{content: none;}
-
-  /* .m_arrow .over{position: absolute; top:0; left: 0; opacity: 0; transition: opacity 0.3s;}
-  .m_arrow .over:hover{opacity: 1;} */
 
 
 
   /* ----------------예고편----------------- */
 
-  #trailer{
-    width:100%; height: 940px;
-      /* overflow: hidden; */
-       position: relative;
-      }
+  #trailer{width:100%; padding-bottom: 200px; position: relative;}
   #trailer h2{margin-top: 70px;}
-  .trailer1, .trailer3{display: block; transform: scale(0.8);}
-  /* #trailer ul{width: 2400px; position: absolute; left: 50%; transform: translateX(-50%);} */
-  #trailer li{display: block; width: 800px; height: 480px; float: left;}
-  
-  
-  .t_arrow{display: block;}
-  .t_arrow .t_left{position: absolute; top:200px; left: -85px; z-index: 10;}
-  .t_arrow .t_right{position: absolute; top:200px; right: -85px; z-index: 10;}
-  .t_arrow .over{opacity: 0; position: absolute; top:0; left: 0; transition: opacity 0.5s;}
-  .t_arrow .t_left:hover .over{opacity: 1;}
-  .t_arrow .t_right:hover .over{opacity: 1;}
+  .trailer1, .trailer3{display: block;}
+  #trailer li{display: block; width: 100%; height: 200px; float: left;}
 
   .t_play{width: 115px;}
+  .mySwiper3{position: relative;}
+  .mySwiper3 .swiper-button-next{color: #5e3da0; position: absolute; top:50%; right: 32%;}
 
-  #trailer .more{margin-top: 550px;}
+  .mySwiper3 .swiper-button-prev{color: #5e3da0;  position: absolute; top:50%; left: 32%;}
+
+  /* #trailer .more{margin-top: 550px;} */
   .more{ font-size: 16px; width: 150px; height: 60px; line-height: 58px; font-weight: 600;}
+  #trailer .more{position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);}
 
 /* ---------------M-BOX TICKET---------------- */
   #mbox_ticker{height: 800px; margin-bottom: 200px;}
@@ -321,15 +303,6 @@ footer .inner{padding: 0 20px; text-align: center; margin: 0 auto;}
 /* -------------------moviefeed----------------- */
 #moviefeed{max-width: none;}
 #moviefeed .inner{width: 1000px; margin: 0 auto;}
-
-/* .feed_img, .feed_txtbox{float: none;}
-#moviefeed li{float: left; width: calc((100% - 60px) / 3); border: none; margin-right: 30px;}
-#moviefeed li:last-child{margin-right: 0;}
-.feed_txtbox{width: 100%; padding: 15px 0;}
-.feed_img{width: 100%;}
-#moviefeed h2{margin: 100px 0 60px;}
-.feed_title{font-size: 22px;}
-.feed_txt{font-size: 14px;} */
 #moviefeed h2{text-align: center; margin-top: 60px; margin-bottom: 40px;}
 .feed_box{max-width: 700px; margin: 0 auto;}
 #moviefeed li{border: 1px solid #eee; margin-bottom: 20px; }
@@ -412,6 +385,9 @@ footer .inner{width: 1000px; margin: 0 auto; text-align: left; position: relativ
 
 
   #moviechart img.star{margin-top: 3px;}
+
+
+  #trailer li{height: 330px;}
 
   /* -----------M-BOX TICKET------------- */
   #mbox_ticker{padding: 100px 0; height: 550px;}

@@ -8,7 +8,7 @@
   <link href="css/font.css" rel="stylesheet" type="text/css">
   <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/swiper.css">
+  <link href="css/swiper.css" rel="stylesheet">
 
   <script src="js/html5shiv.min.js"></script>
   <script src="js/swiper-4.5.1.min.js"></script>
@@ -52,27 +52,13 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="./img/slide2.png" alt=""></div>
           <div class="swiper-slide"><img src="./img/slide_1.png" alt=""></div>
-          <div class="swiper-slide">슬라이드3</div>
+          <!-- <div class="swiper-slide">슬라이드3</div> -->
         </div>
         <div class="swiper-button-next"><img src="img/arrow_right.png" alt="다음화살표"></div>
         <div class="swiper-button-prev"><img src="img/arrow_left.png" alt="이전화살표"></div></div>
         <div class="swiper-pagination"></div>
       </div>
       
-
-
-      <div class="s_arrow">
-        <a href="#" class="s_left"><img src="img/arrow_left.png" alt="왼쪽화살표"></a>
-        <a href="#" class="s_right"><img src="img/arrow_right.png" alt="오른쪽화살표"></a>
-      </div>
-      <!--.s_arrow-->
-      <!-- <div class="circle">
-        <a href="#" class="on"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-      </div> -->
-      <!--.circle-->
     </div><!--.slide-->
     
     <div class="ticket_box">
@@ -189,18 +175,9 @@
             </li>
           </ul>
         </div><!--.mc_box-->
-        <div class="m_arrow">
-          <!-- <a href="#" class="m_left">
-            <img src="img/chart_left.png" alt="왼쪽화살표">
-            <img src="img/sc_left_hover.png" alt="왼쪽화살표 호버" class="over">
-          </a> -->
-          <!-- <a href="#" class="m_right">
-            <img src="img/chart_right.png" alt="오른쪽화살표">
-            <img src="img/sc_right_hover.png" alt="오른쪽화살표 호버" class="over">
-          </a> -->
-          <div class="swiper-button-next"><img src="img/sc_right.png" alt="다음버튼"></div>
-          <div class="swiper-button-prev"><img src="img/sc_left.png" alt="이전버튼"></div>
-        </div><!--.m_arrow-->
+        <div class="swiper-button-next"><img src="img/sc_right.png" alt="다음버튼"></div>
+        <div class="swiper-button-prev"><img src="img/sc_left.png" alt="이전버튼"></div>
+    
       </div><!--.inner-->
     </section><!--#moviechart-->
 
@@ -208,18 +185,26 @@
       <h2>예고편</h2>
       <p class="title_en">Trailer</p>
       <ul class="clear swiper-wrapper">
-        <li class="trailer1 swiper-slide"><iframe width="900" height="506" src="https://www.youtube.com/embed/BdkSkI61aGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-        <li class="trailer2 swiper-slide">
-          <iframe width="900" height="506" src="https://www.youtube.com/embed/zE36E8_hazE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <button type="button" class="t_play"><img src="img/icon_play.png"></button>
-          <!-- <div class="t_arrow">
-            <button type="button" class="t_left"><img src="img/trailer_left.png" alt="트레일러 왼쪽화살표"><img src="img/trailer_left_over.png" alt="왼쪽화살표오버" class="over"></button>
-            <button type="button" class="t_right"><img src="img/trailer_right.png" alt="트레일러 오른쪽화살표"><img src="img/trailer_right_over.png" alt="오른쪽화살표오버" class="over"></button>
-          </div> -->
+        <li class="trailer1 swiper-slide">
+          <!-- <iframe src="https://www.youtube.com/embed/_Pg2ieBoPQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <a href="video/movie1.mp4"><img src="img/trailer1.png"></a>
         </li>
-        <li class="trailer1 swiper-slide"><iframe width="900" height="506" src="https://www.youtube.com/embed/BdkSkI61aGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-        <li class="trailer1 swiper-slide"><iframe width="900" height="506" src="https://www.youtube.com/embed/BdkSkI61aGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-        <li class="trailer1 swiper-slide"><iframe width="900" height="506" src="https://www.youtube.com/embed/BdkSkI61aGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+        <li class="trailer2 swiper-slide">
+          <iframe 
+          src="https://www.youtube.com/embed/zE36E8_hazE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+          <button type="button" class="t_play"><img src="img/icon_play.png"></button>
+         
+        </li>
+        <li class="trailer1 swiper-slide">
+          <iframe src="https://www.youtube.com/embed/yfSMTFzw-Kw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+        <li class="trailer1 swiper-slide">
+          <iframe src="https://www.youtube.com/embed/BdkSkI61aGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+        <li class="trailer1 swiper-slide">
+          <iframe src="https://www.youtube.com/embed/yC62Q_qAdgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
         
       </ul>
       <div class="swiper-button-next"></div>
@@ -227,25 +212,6 @@
      
       <a href="#" class="more">View More</a>
     </section><!--#trailer-->
-
-    <!-- <section id="trailer" class="swiper3">
-      <h2>예고편</h2>
-      <p class="title_en">Trailer</p>
-      <ul class="clear">
-        <li class="trailer1">
-          <a class="video-link" href="img/movie1.mp4" data-lity><img src="img/trailer1.png"></a>
-      </li>
-      <li class="trailer2">
-          <a class="video-link" href="img/movie2.mp4" data-lity><img src="img/trailer2.png"></a>
-      </li>
-      <li class="trailer3">
-        <a class="video-link" href="img/spidermen.mp4" data-lity><img src="img/trailer3.png"></a>
-      </li>
-      </ul>
-     
-      <a href="#" class="more">View More</a>
-    </section> -->
-    <!--#trailer-->
     
     <section id="mbox_ticker">
       <div class="inner">

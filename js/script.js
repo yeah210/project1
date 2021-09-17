@@ -15,14 +15,15 @@ $(document).ready(function(){ //시작
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 0,
         centeredSlides: true,
+        loop: true,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
         },
         cssMode: true,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".mySwiper .swiper-button-next",
+          prevEl: ".mySwiper .swiper-button-prev",
         },
         pagination: {
           el: ".swiper-pagination",
@@ -37,11 +38,11 @@ $(document).ready(function(){ //시작
       // 무비차트
       var swiper = new Swiper(".mySwiper2", {
         slidesPerView: 4,
-        spaceBetween: 20,
+        spaceBetween: 30,
         freeMode: true,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: "#moviechart .swiper-button-next",
+          prevEl: "#moviechart .swiper-button-prev",
         },
       });
 
@@ -49,9 +50,11 @@ $(document).ready(function(){ //시작
       var swiper = new Swiper(".mySwiper3", {
         slidesPerView: 1,
         spaceBetween: 10,
+        loop: true,
+        loopFillGroupWithBlank: true,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".mySwiper3 .swiper-button-next",
+          prevEl: ".mySwiper3 .swiper-button-prev",
         },
         // pagination: {
         //   el: ".swiper-pagination3",
@@ -60,19 +63,19 @@ $(document).ready(function(){ //시작
         breakpoints: {
           "@0.00": {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 20,
           },
           "@0.75": {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 60,
           },
           "@1.00": {
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 80,
           },
           "@1.50": {
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 80,
           },
         },
       });
